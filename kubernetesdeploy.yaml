@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: insuranceapp-eta-container
-        image: srikant750/bankapp-eta-app
+        image: srikant750/insuranceapp-eta-app
         ports:
         - containerPort: 8082
 ---
