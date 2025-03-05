@@ -16,9 +16,10 @@ spec:
     spec:
       containers:
       - name: insuranceapp-eta-container
-        image: srikant750/insuranceapp-eta-app
+        image: srikant750/insuranceapp-eta-app:v1.0  
         ports:
         - containerPort: 8084
+        restartPolicy: Always  
 ---
 apiVersion: v1
 kind: Service
@@ -29,9 +30,10 @@ metadata:
 spec:
   selector:
     app: insuranceapp-eta-app
-
-  type: NodePort
+  type: NodePort 
   ports:
-  - nodePort: 31032    
-    port: 8084
+  - port: 8084
     targetPort: 8084
+    nodePort: 31032 
+
+   
