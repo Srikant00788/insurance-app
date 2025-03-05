@@ -29,7 +29,7 @@ pipeline {
 				sh 'docker version'
 				sh "docker build -t srikant750/insuranceapp-eta-app:${BUILD_NUMBER} ."
 				sh 'docker image list'
-				sh "docker tag srikant750/healthapp-eta-app:${BUILD_NUMBER} srikant750/insuranceapp-eta-app:latest"
+				sh "docker tag srikant750/insuranceapp-eta-app:${BUILD_NUMBER} srikant750/insuranceapp-eta-app:latest"
             }
         }
 		stage('Login2DockerHub') {
