@@ -34,6 +34,7 @@ spec:
   ports:
   - port: 8084
     targetPort: 8084
-    nodePort: 31033
+    nodePort: 31032
+    
 
    
