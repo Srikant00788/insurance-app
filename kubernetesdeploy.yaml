@@ -19,7 +19,7 @@ spec:
         image: srikant750/insuranceapp-eta-app:v1.0  
         ports:
         - containerPort: 8084
-        restartPolicy: Always  
+      restartPolicy: Always  
 ---
 apiVersion: v1
 kind: Service
